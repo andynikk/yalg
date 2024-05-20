@@ -4,37 +4,287 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d394349-5e30-4e77-aa23-b80d4921b9ad" name="Changes" comment="" />
+    <list default="true" id="7d394349-5e30-4e77-aa23-b80d4921b9ad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/basic.go" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sprint1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sprint1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sprint1/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sprint1/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sprint2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sprint2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sprint2/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sprint2/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sprint3/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sprint3/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sprint3/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sprint3/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sprint4/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sprint4/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sprint4/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sprint4/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/final/A/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/final/A/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/final/A/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/final/A/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/final/B/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/final/B/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/final/B/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/final/B/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/final/B1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/final/B1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task01/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task01/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task01/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task01/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task02/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task02/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task02/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task02/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task03/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task03/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task03/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task03/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task04/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task04/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task04/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task04/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task05/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task05/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task05/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task05/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task07/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task07/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task07/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task07/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task08/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task08/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint06/task08/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint06/task08/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/final/A/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/final/A/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/final/A/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/final/A/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/final/A0/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/final/A0/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/final/B/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/final/B/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/final/B/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/final/B/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/final/B0/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/final/B0/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task01/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task01/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task01/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task01/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task02/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task02/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task02/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task02/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task03/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task03/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task03/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task03/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task08/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task08/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task08/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task08/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task09/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task09/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task09/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task09/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task10/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task10/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task10/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task10/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task11/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task11/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task11/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task11/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task12/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task12/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint07/task12/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint07/task12/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint08/task01/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint08/task01/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint08/task01/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint08/task01/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint08/task05/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint08/task05/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint08/task05/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint08/task05/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/final1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/final1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/final2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/final2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task10.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task10.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task11.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task11.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task12.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task12.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task3.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task4.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task5.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task6.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task6.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task7.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task7.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task8.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task8.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/task9.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/task9.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/final1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/final1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/final2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/final2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task10.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task10.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task11.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task11.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task12.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task12.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task3.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task4.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task5.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task6.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task6.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task7.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task7.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task7_v2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task7_v2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task7_v3.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task7_v3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task8.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task8.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint2/task9.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint2/task9.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/final1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/final1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/final1_1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/final1_1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/final2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/final2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task10.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task10.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task11.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task11.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task12.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task12.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task13.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task13.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task14.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task14.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task15.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task15.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task16.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task16.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task3.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task4.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task5.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task6.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task6.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task7.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task7.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task8.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task8.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint3/task9.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint3/task9.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/final1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/final1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/final2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/final2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task1.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task10.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task10.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task11/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task11/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task11/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task11/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task2.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task3.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task4.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task4.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task5.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task6.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task6.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task7.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task7.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task8.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task8.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint4/task9.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint4/task9.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/final/A/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/final/A/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/final/A/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/final/A/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/final/B/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/final/B/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/final/B/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/final/B/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task1/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task1/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task10/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task10/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task11/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task11/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task11/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task11/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task12/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task12/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task13/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task13/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task2/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task2/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task3/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task3/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task4/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task4/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task5/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task5/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task5/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task5/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task9/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task9/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint5/task9/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sprint5/task9/main_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/res" userTempatePath="" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.21.4" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cz4mgSKhDT8CnqC6C9PQ5AInl0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Bases/Go/yalg/sprint07/final&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bases\Go\yalg\sprint07\final" />
+      <recent name="C:\Bases\Go\yalg\sprint08" />
+      <recent name="C:\Bases\Go\yalg\sprint08\task01" />
+      <recent name="C:\Bases\Go\yalg\sprint07\final\" />
+      <recent name="C:\Bases\Go\yalg\sprint07" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bases\Go\yalg\sprint1" />
+      <recent name="C:\Bases\Go\yalg\sprint1\final" />
+      <recent name="C:\Bases\Go\yalg\cmd\sprint1" />
+      <recent name="C:\Bases\Go\yalg\sprint1\cmd" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestTask in yalg/sprint07/final/B (1)">
+    <configuration name="TestTask in yalg/sprint07/final/A" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="yalg" />
+      <working_directory value="$PROJECT_DIR$/sprint07/final/A" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="yalg/sprint07/final/A" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTask\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTask in yalg/sprint07/final/A0" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="yalg" />
+      <working_directory value="$PROJECT_DIR$/sprint07/final/A0" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="yalg/sprint07/final/A0" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTask\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTask in yalg/sprint07/final/B (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="yalg" />
+      <working_directory value="$PROJECT_DIR$/sprint07/final/B" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="yalg/sprint07/final/B" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTask\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTask in yalg/sprint07/final/B" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="yalg" />
+      <working_directory value="$PROJECT_DIR$/sprint07/final/B" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="yalg/sprint07/final/B" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTask\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTask in yalg/sprint07/final/B0" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="yalg" />
+      <working_directory value="$PROJECT_DIR$/sprint07/final/B0" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="yalg/sprint07/final/B0" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTask\E$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Test.TestTask in yalg/sprint07/final/B (1)" />
+      <item itemvalue="Go Test.TestTask in yalg/sprint07/final/B0" />
+      <item itemvalue="Go Test.TestTask in yalg/sprint07/final/A" />
+      <item itemvalue="Go Test.TestTask in yalg/sprint07/final/A0" />
+      <item itemvalue="Go Test.TestTask in yalg/sprint07/final/B" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestTask in yalg/sprint07/final/B (1)" />
+        <item itemvalue="Go Test.TestTask in yalg/sprint07/final/B0" />
+        <item itemvalue="Go Test.TestTask in yalg/sprint07/final/A" />
+        <item itemvalue="Go Test.TestTask in yalg/sprint07/final/A0" />
+        <item itemvalue="Go Test.TestTask in yalg/sprint07/final/B" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,7 +293,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709101236113</updated>
-      <workItem from="1709101237424" duration="9000" />
+      <workItem from="1709101237424" duration="141272000" />
+      <workItem from="1709409837501" duration="33039000" />
+      <workItem from="1709545722052" duration="25603000" />
+      <workItem from="1709632232757" duration="13294000" />
+      <workItem from="1710747268452" duration="60092000" />
+      <workItem from="1710910214983" duration="41831000" />
+      <workItem from="1710998984110" duration="27213000" />
+      <workItem from="1711035143967" duration="194000" />
+      <workItem from="1711035362251" duration="28276000" />
+      <workItem from="1712842297774" duration="76360000" />
+      <workItem from="1713861077180" duration="244320000" />
+      <workItem from="1715691498428" duration="15005000" />
     </task>
     <servers />
   </component>
@@ -52,5 +313,79 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint1/task7.go</url>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint1/task7.go</url>
+          <line>34</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint2/task3.go</url>
+          <line>34</line>
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint2/task3.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint3/final1_1.go</url>
+          <line>47</line>
+          <option name="timeStamp" value="355" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint4/task4.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="450" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint5/final/A/main.go</url>
+          <line>85</line>
+          <option name="timeStamp" value="522" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint06/final/A/main.go</url>
+          <line>41</line>
+          <option name="timeStamp" value="742" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint07/final/A0/main.go</url>
+          <line>20</line>
+          <option name="timeStamp" value="897" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint07/final/B0/main.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="909" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/sprint07/final/B0/main.go</url>
+          <line>14</line>
+          <option name="timeStamp" value="915" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoTestRunConfiguration">
+        <watch expression="dp[0][m]" />
+      </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/sprint4/task6.go" line="71">
+        <watch expression="str" />
+      </inline-watch>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/yalg$Test_sprint2.out" NAME="Test sprint2 Coverage Results" MODIFIED="1709408874342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/yalg$TestTask_in_yalg_sprint06_final_B1.out" NAME="TestTask in yalg/sprint06/final/B1 Coverage Results" MODIFIED="1714663342681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/yalg$Test_Sprint1.out" NAME="Test Sprint1 Coverage Results" MODIFIED="1709193954555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/yalg$BenchmarkTask7_in_yalg_cmd_sprint2.out" NAME="BenchmarkTask7 in yalg/cmd/sprint2 Coverage Results" MODIFIED="1709415309458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

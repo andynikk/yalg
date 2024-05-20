@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func maxFlowers(nI, mJ int, field [][]int, dp [][]int) int {
+func maxFlowers(nI, mJ int, field [][]int, dp [][]int) (int, string) {
 
 	for j := 1; j < mJ; j++ {
 		dp[nI-1][j] += dp[nI-1][j-1]
@@ -24,7 +24,52 @@ func maxFlowers(nI, mJ int, field [][]int, dp [][]int) int {
 		}
 	}
 
-	return dp[0][mJ-1]
+	kI := 0
+	kJ := mJ - 1
+
+	way := make([]string, 0)
+	for {
+
+		if kI == nI-1 && kJ == 0 {
+			break
+		}
+
+		if kI == nI-1 {
+			way = append(way, "R")
+			kJ--
+			if kJ <= 0 {
+				break
+			}
+			continue
+		}
+
+		if kJ == 0 {
+			way = append(way, "U")
+			kI++
+			if kI >= nI-1 {
+				break
+			}
+			continue
+		}
+
+		valueDown := field[kI+1][kJ]
+		valueLeft := field[kI][kJ-1]
+
+		if valueDown == max(valueDown, valueLeft) {
+			way = append(way, "U")
+			kI++
+		} else {
+			way = append(way, "R")
+			kJ--
+		}
+
+	}
+
+	for i := 0; i < len(way)/2; i++ {
+		way[i], way[len(way)-i-1] = way[len(way)-i-1], way[i]
+	}
+
+	return dp[0][mJ-1], strings.Join(way, "")
 }
 
 // <template>
@@ -57,7 +102,7 @@ func fieldFlowers(res *[]byte) string {
 		dp[i-1] = b
 	}
 
-	maximum := maxFlowers(n, m, field, dp)
+	maximum, way := maxFlowers(n, m, field, dp)
 
-	return strconv.Itoa(maximum) + "\n"
+	return strconv.Itoa(maximum) + "\n" + way + "\n"
 }

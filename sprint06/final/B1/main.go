@@ -1,6 +1,7 @@
 package main
 
 import (
+	"strconv"
 	"strings"
 )
 
@@ -9,22 +10,51 @@ const (
 	R
 )
 
-func lengthenRoad(road [2]int, roads map[[2]int]int) {
-
-	newRoadSection := [2]int{road[0], road[1]}
-	for {
-		previousRoadSection := [2]int{newRoadSection[0], newRoadSection[1] - 1}
-		if _, ok := roads[previousRoadSection]; !ok {
-			break
-		}
-
-		newRoadSection = [2]int{newRoadSection[0] - 1, newRoadSection[1]}
-		if newRoadSection[0] == 0 {
-			break
-		}
-
-		roads[newRoadSection] += 1
+func typeRoad(roadType uint8) int {
+	if roadType == 'B' {
+		return B
 	}
+
+	return R
+}
+
+func dfs(startNode int, roads [][]int, colors []int) bool {
+	stack := []int{}
+	stack = append(stack, startNode)
+
+	for len(stack) > 0 {
+		node := stack[len(stack)-1]
+		stack = stack[:len(stack)-1]
+
+		if colors[node] == 0 {
+			colors[node] = 1
+			stack = append(stack, node)
+
+			for i := 0; i < len(roads[node]); i++ {
+				if colors[roads[node][i]] == 0 {
+					stack = append(stack, roads[node][i])
+				} else if colors[roads[node][i]] == 1 {
+					return true
+				}
+			}
+		} else if colors[node] == 1 {
+			colors[node] = 2
+		}
+	}
+	return false
+}
+
+func checkRoads(cities int, roads [][]int) bool {
+	colors := make([]int, cities+1)
+	for node := 1; node < len(colors); node++ {
+		if colors[node] != 0 {
+			continue
+		}
+		if dfs(node, roads, colors) {
+			return false
+		}
+	}
+	return true
 }
 
 func railways(res *[]byte) string {
@@ -32,35 +62,25 @@ func railways(res *[]byte) string {
 	if lines[len(lines)-1] == "" {
 		lines = lines[:len(lines)-1]
 	}
+	n, _ := strconv.Atoi(lines[0])
 	lines = lines[1:]
 
-	roads := map[int]map[[2]int]int{}
-
-	for i := 0; i < len(lines); i++ {
+	roads := make([][]int, n+1)
+	for i := 0; i < n-1; i++ {
+		cityOut := i + 1
 		for j := 0; j < len(lines[i]); j++ {
-			typeRoad := R
-			if lines[i][j] == 66 {
-				typeRoad = B
+			cityIn := cityOut + j + 1
+			if typeRoad(lines[i][j]) == B {
+				roads[cityOut] = append(roads[cityOut], cityIn)
+			} else {
+				roads[cityIn] = append(roads[cityIn], cityOut)
 			}
-
-			typedRoad := roads[typeRoad]
-			if typedRoad == nil {
-				typedRoad = map[[2]int]int{}
-			}
-
-			road := [2]int{i + 1, j + i + 2}
-			typedRoad[road] = 1
-			lengthenRoad(road, typedRoad)
-
-			roads[typeRoad] = typedRoad
 		}
 	}
 
-	for road, _ := range roads[B] {
-		if _, ok := roads[R][road]; ok {
-			return "NO\n"
-		}
+	if checkRoads(n, roads) {
+		return "YES\n"
+	} else {
+		return "NO\n"
 	}
-
-	return "YES\n"
 }

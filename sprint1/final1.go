@@ -5,48 +5,53 @@ import (
 	"strings"
 )
 
-func Task1(res *[]byte) []string {
+func Final1(res *[]byte) ([]string, string) {
 
 	lines := strings.Split(string(*res), "\n")
 
 	arr := strings.Split(strings.Replace(lines[1], "\r", "", -1), " ")
 	lines = nil
 
-	previousZero := -1
-	curZero := -1
+	zeroWas := false
 
-	for i := 0; i < len(arr); i++ {
-
-		switch arr[i] {
-		case "0":
-			if curZero != -1 {
-				previousZero = curZero
-			}
-			curZero = i
-		default:
-			arr[i] = strconv.Itoa(i - curZero)
+	v := 0
+	for i := len(arr) - 1; i >= 0; i-- {
+		if arr[i] == "0" {
+			v = 0
+			zeroWas = true
 			continue
 		}
 
-		for j := previousZero + 1; j < i; j++ {
-			differenceBefore := j - previousZero
-			if previousZero < 0 {
-				differenceBefore = curZero - j
-			}
-			differenceAfter := curZero - j
-
-			mMin := 0
-			if differenceBefore < 0 && differenceAfter >= 0 {
-				mMin = differenceAfter
-			} else if differenceBefore >= 0 && differenceAfter < 0 {
-				mMin = differenceBefore
-			} else {
-				mMin = min(differenceBefore, differenceAfter)
-			}
-
-			arr[j] = strconv.Itoa(mMin)
-			curZero = i
+		switch zeroWas {
+		case false:
+			arr[i] = strconv.Itoa(i + 1)
+			continue
+		default:
+			v++
+			arr[i] = strconv.Itoa(v)
 		}
 	}
-	return arr
+
+	zeroWas = false
+	for i := 0; i < len(arr); i++ {
+		if arr[i] == "0" {
+			v = 0
+			zeroWas = true
+			continue
+		}
+
+		switch zeroWas {
+		case true:
+			v++
+			vv, _ := strconv.Atoi(arr[i])
+			if v < vv {
+				arr[i] = strconv.Itoa(v)
+			}
+		default:
+			continue
+		}
+
+	}
+
+	return arr, " "
 }

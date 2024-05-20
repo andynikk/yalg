@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func Task3(res *[]byte) string {
+func Task10(res *[]byte) string {
 
 	lines := strings.Split(string(*res), "\n")
 	n, _ := strconv.Atoi(lines[0])

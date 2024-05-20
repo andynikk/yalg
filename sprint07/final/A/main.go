@@ -1,59 +1,45 @@
 package main
 
 import (
-	"slices"
 	"strconv"
 	"strings"
 )
 
-func findLIS(n int, ratings []int) ([]string, int) {
-	dp := make([]int, n)
-	parent := make([]int, n)
-	maxLength := 0
-	endIndex := 0
+func distance(dp [][2]int, s, t []string) int {
 
-	for i := 0; i < n; i++ {
-		dp[i] = 1
-		parent[i] = -1
-		for j := 0; j < i; j++ {
-			if ratings[i] > ratings[j] && dp[i] < dp[j]+1 {
-				dp[i] = dp[j] + 1
-				parent[i] = j
+	for j := 1; j < len(t)+1; j++ {
+		for i := 1; i < len(s)+1; i++ {
+			dp[0][1] = j
+			coefficient := 0
+			if s[i-1] != t[j-1] {
+				coefficient = 1
 			}
+
+			dp[i][1] = min(dp[i-1][1]+1, dp[i][0]+1, dp[i-1][0]+coefficient)
+			dp[i-1][0] = dp[i-1][1]
 		}
-		if dp[i] > maxLength {
-			maxLength = dp[i]
-			endIndex = i
-		}
+		dp[len(s)][0] = dp[len(s)][1]
 	}
 
-	result := make([]string, 0)
-	for endIndex != -1 {
-		result = append(result, strconv.Itoa(endIndex+1))
-		endIndex = parent[endIndex]
-	}
-	slices.Reverse(result)
-
-	return result, maxLength
+	return dp[len(s)][0]
 }
 
 // <template>
-func journey(res *[]byte) string {
+func Levenshtein(res *[]byte) string {
 
-	lines := strings.Split(strings.Replace(string(*res), "\r", "", -1), "\n")
-	if lines[len(lines)-1] == "" {
-		lines = lines[:len(lines)-1]
+	lines := strings.Split(string(*res), "\n")
+
+	s := strings.Split(lines[0], "")
+	t := strings.Split(lines[1], "")
+
+	if len(s) > len(t) {
+		s, t = t, s
 	}
 
-	n, _ := strconv.Atoi(strings.Split(lines[0], " ")[0])
-	line := strings.Split(lines[1], " ")
-
-	ratings := make([]int, n)
-	for i := range line {
-		ratings[i], _ = strconv.Atoi(line[i])
+	dp := make([][2]int, len(s)+1)
+	for i := 0; i < len(s)+1; i++ {
+		dp[i][0] = i
 	}
 
-	subsequence, length := findLIS(n, ratings)
-
-	return strconv.Itoa(length) + "\n" + strings.Join(subsequence, " ") + "\n"
+	return strconv.Itoa(distance(dp, s, t)) + "\n"
 }

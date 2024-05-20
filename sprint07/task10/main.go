@@ -1,79 +1,44 @@
 package main
 
 import (
+	"slices"
 	"strconv"
 	"strings"
 )
 
-func maxFlowers(nI, mJ int, field [][]int, dp [][]int) (int, string) {
+func findLIS(n int, ratings []int) ([]string, int) {
+	dp := make([]int, n)
+	parent := make([]int, n)
+	maxLength := 0
+	endIndex := 0
 
-	for j := 1; j < mJ; j++ {
-		dp[nI-1][j] += dp[nI-1][j-1]
-		field[nI-1][j] = dp[nI-1][j]
-	}
-
-	for i := nI - 2; i >= 0; i-- {
-		dp[i][0] += dp[i+1][0]
-		field[i][0] = dp[i][0]
-	}
-
-	for i := nI - 2; i >= 0; i-- {
-		for j := 1; j < mJ; j++ {
-			dp[i][j] = field[i][j] + max(field[i+1][j], field[i][j-1])
-			field[i][j] = dp[i][j]
-		}
-	}
-
-	kI := 0
-	kJ := mJ - 1
-
-	way := make([]string, 0)
-	for {
-
-		if kI == nI-1 && kJ == 0 {
-			break
-		}
-
-		if kI == nI-1 {
-			way = append(way, "R")
-			kJ--
-			if kJ <= 0 {
-				break
+	for i := 0; i < n; i++ {
+		dp[i] = 1
+		parent[i] = -1
+		for j := 0; j < i; j++ {
+			if ratings[i] > ratings[j] && dp[i] < dp[j]+1 {
+				dp[i] = dp[j] + 1
+				parent[i] = j
 			}
-			continue
 		}
-
-		if kJ == 0 {
-			way = append(way, "U")
-			kI++
-			if kI >= nI-1 {
-				break
-			}
-			continue
+		if dp[i] > maxLength {
+			maxLength = dp[i]
+			endIndex = i
 		}
-
-		valueDown := field[kI+1][kJ]
-		valueLeft := field[kI][kJ-1]
-
-		if valueDown == max(valueDown, valueLeft) {
-			way = append(way, "U")
-			kI++
-		} else {
-			way = append(way, "R")
-			kJ--
-		}
-
 	}
 
-	for i := 0; i < len(way)/2; i++ {
-		way[i], way[len(way)-i-1] = way[len(way)-i-1], way[i]
+	result := make([]string, 0)
+	for endIndex != -1 {
+		result = append(result, strconv.Itoa(endIndex+1))
+		endIndex = parent[endIndex]
 	}
+	slices.Reverse(result)
 
-	return dp[0][mJ-1], strings.Join(way, "")
+	return result, maxLength
 }
 
 // <template>
-func fieldFlowers(res *[]byte) string {
+func journey(res *[]byte) string {
 
 	lines := strings.Split(strings.Replace(string(*res), "\r", "", -1), "\n")
 	if lines[len(lines)-1] == "" {
@@ -81,28 +46,14 @@ func fieldFlowers(res *[]byte) string {
 	}
 
 	n, _ := strconv.Atoi(strings.Split(lines[0], " ")[0])
-	m, _ := strconv.Atoi(strings.Split(lines[0], " ")[1])
+	line := strings.Split(lines[1], " ")
 
-	dp := make([][]int, n)
-	field := make([][]int, n)
-	for i := 1; i < len(lines); i++ {
-		if lines[i] == "" {
-			continue
-		}
-
-		a := make([]int, m)
-		b := make([]int, m)
-		for index, l := range []rune(lines[i]) {
-			v, _ := strconv.Atoi(string(l))
-
-			a[index] = v
-			b[index] = v
-		}
-		field[i-1] = a
-		dp[i-1] = b
+	ratings := make([]int, n)
+	for i := range line {
+		ratings[i], _ = strconv.Atoi(line[i])
 	}
 
-	maximum, way := maxFlowers(n, m, field, dp)
+	subsequence, length := findLIS(n, ratings)
 
-	return strconv.Itoa(maximum) + "\n" + way + "\n"
+	return strconv.Itoa(length) + "\n" + strings.Join(subsequence, " ") + "\n"
 }

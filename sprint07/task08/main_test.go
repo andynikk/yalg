@@ -6,9 +6,10 @@ import (
 )
 
 func TestTask(t *testing.T) {
-	res := []byte("6 3\n")
-	out := "13\n"
-	answer := jumpingStairs(&res)
+
+	res := []byte("2 3\n101\n110\n")
+	out := "3\n"
+	answer := fieldFlowers(&res)
 	fmt.Println(answer)
 	fmt.Println(out)
 	fmt.Println("------------------")
@@ -16,9 +17,9 @@ func TestTask(t *testing.T) {
 		t.Error("Error test")
 	}
 
-	res = []byte("7 7\n")
-	out = "32\n"
-	answer = jumpingStairs(&res)
+	res = []byte("3 3\n100\n110\n001\n")
+	out = "2\n"
+	answer = fieldFlowers(&res)
 	fmt.Println(answer)
 	fmt.Println(out)
 	fmt.Println("------------------")
@@ -26,19 +27,9 @@ func TestTask(t *testing.T) {
 		t.Error("Error test")
 	}
 
-	res = []byte("2 2\n")
+	res = []byte("1 1\n1\n\n")
 	out = "1\n"
-	answer = jumpingStairs(&res)
-	fmt.Println(answer)
-	fmt.Println(out)
-	fmt.Println("------------------")
-	if answer != out {
-		t.Error("Error test")
-	}
-
-	res = []byte("62 44\n")
-	out = "535806680\n"
-	answer = jumpingStairs(&res)
+	answer = fieldFlowers(&res)
 	fmt.Println(answer)
 	fmt.Println(out)
 	fmt.Println("------------------")
@@ -48,4 +39,5 @@ func TestTask(t *testing.T) {
 
 	fmt.Println("===============================")
 	fmt.Println("===============================")
+
 }

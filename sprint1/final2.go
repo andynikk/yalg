@@ -5,21 +5,22 @@ import (
 	"strings"
 )
 
-func Task2(res *[]byte) []string {
+func Final2(res *[]byte) ([]string, string) {
 
 	const sch int = 4
 	lines := strings.Split(string(*res), "\n")
 
-	k, err := strconv.ParseInt(strings.Replace(lines[0], "\r", "", -1), 0, 0)
+	k, err := strconv.Atoi(strings.Replace(lines[0], "\r", "", -1))
 	if err != nil {
 		panic(err)
 	}
 	maxPress := k * 2
 
 	arr := lines[1:]
-	lines = nil
 
-	hash := map[string]int{}
+	win := 0
+
+	arrNum := make([]int, 9)
 	for i := 0; i < sch; i++ {
 		for j := 0; j < sch; j++ {
 			symbol := string(arr[i][j])
@@ -27,21 +28,20 @@ func Task2(res *[]byte) []string {
 				continue
 			}
 
-			val, ok := hash[symbol]
-			if ok {
-				hash[symbol] = val + 1
-			} else {
-				hash[symbol] = 1
+			v, _ := strconv.Atoi(symbol)
+			idx := v - 1
+
+			if arrNum[idx] == 0 {
+				win++
+			}
+
+			arrNum[idx] = arrNum[idx] + 1
+
+			if arrNum[idx]-maxPress == 1 {
+				win--
 			}
 		}
 	}
 
-	winningPoint := 0
-	for _, val := range hash {
-		if val <= int(maxPress) {
-			winningPoint++
-		}
-	}
-
-	return []string{strconv.Itoa(winningPoint)}
+	return []string{strconv.Itoa(win)}, " "
 }

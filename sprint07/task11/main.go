@@ -1,60 +1,82 @@
 package main
 
 import (
+	"slices"
 	"strconv"
 	"strings"
 )
 
-func maxWeight(dp [][]int, weight []int, items, W int) int {
+func maxSequence(sequenceA, sequenceB []int) (int, []string, []string) {
+	dp := make([][]int, len(sequenceA)+1)
+	for i := 0; i <= len(sequenceA); i++ {
+		row := make([]int, len(sequenceB)+1)
+		dp[i] = row
+	}
 
-	i := 0
-	for {
-		for j := 1; j <= W; j++ {
-
-			w := 0
-			if j-weight[i] >= 0 {
-				w = weight[i] + dp[0][j-weight[i]]
+	for i := 1; i <= len(sequenceA); i++ {
+		for j := 1; j <= len(sequenceB); j++ {
+			if sequenceA[i-1] == sequenceB[j-1] {
+				dp[i][j] = dp[i-1][j-1] + 1
+			} else {
+				dp[i][j] = max(dp[i-1][j], dp[i][j-1])
 			}
-
-			dp[1][j] = max(dp[0][j], w)
-		}
-
-		for j := 0; j <= W; j++ {
-			dp[0][j] = dp[1][j]
-			dp[1][j] = 0
-		}
-		i++
-		if i == items {
-			break
 		}
 	}
 
-	return dp[0][W]
+	answerA := make([]string, 0)
+	answerB := make([]string, 0)
+
+	i, j := len(sequenceA), len(sequenceB)
+
+	for i != 0 && j != 0 {
+		if sequenceA[i-1] == sequenceB[j-1] {
+			answerA = append(answerA, strconv.Itoa(j))
+			answerB = append(answerB, strconv.Itoa(i))
+			i--
+			j--
+		} else {
+			if dp[i][j] == dp[i-1][j] {
+				i--
+			} else {
+				j--
+			}
+		}
+	}
+	slices.Reverse(answerA)
+	slices.Reverse(answerB)
+
+	return dp[len(sequenceA)][len(sequenceB)], answerA, answerB
 }
 
-// <template>
-func goldLeprechauns(res *[]byte) string {
+func horoscopes(res *[]byte) string {
 
 	lines := strings.Split(strings.Replace(string(*res), "\r", "", -1), "\n")
 
-	items, _ := strconv.Atoi(strings.Split(lines[0], " ")[0])
-	W, _ := strconv.Atoi(strings.Split(lines[0], " ")[1])
-
-	//dp := make([][]int, items+1)
-	dp := make([][]int, 2)
-
-	for i := 0; i <= 1; i++ {
-		dp[i] = make([]int, W+1)
+	lenSequenceA, _ := strconv.Atoi(lines[0])
+	sequenceA := make([]int, lenSequenceA)
+	for i := range strings.Split(lines[1], " ") {
+		sequenceA[i], _ = strconv.Atoi(strings.Split(lines[1], " ")[i])
 	}
 
-	weightItems := strings.Split(lines[1], " ")
-	weight := make([]int, items)
-
-	for i := 0; i < len(weightItems); i++ {
-		weight[i], _ = strconv.Atoi(weightItems[i])
+	lenSequenceB, _ := strconv.Atoi(lines[2])
+	sequenceB := make([]int, lenSequenceB)
+	for i := range strings.Split(lines[3], " ") {
+		sequenceB[i], _ = strconv.Atoi(strings.Split(lines[3], " ")[i])
 	}
 
-	maximum := maxWeight(dp, weight, items, W)
+	maximum, answerA, answerB := maxSequence(sequenceA, sequenceB)
 
-	return strconv.Itoa(maximum) + "\n"
+	strA := ""
+	if len(answerA) != 0 {
+		strA = strings.Join(answerA, " ")
+		strA = strings.TrimSuffix(strA, " ") + "\n"
+	}
+
+	strB := ""
+	if len(answerB) != 0 {
+		strB = strings.Join(answerB, " ")
+		strB = strings.TrimSuffix(strB, " ") + "\n"
+	}
+
+	return strconv.Itoa(maximum) + "\n" + strB + strA
 }

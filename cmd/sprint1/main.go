@@ -2,7 +2,7 @@ package main
 
 import (
 	"yalg/basic"
-	"yalg/cmd/sprint1"
+	"yalg/sprint1"
 )
 
 func main() {
@@ -11,7 +11,7 @@ func main() {
 		panic(err)
 	}
 
-	r := sprint1.Task1(&res)
+	r, sep := sprint1.Task6(&res)
 
-	err = basic.OutputTxt(&r)
+	err = basic.OutputTxt(&r, sep)
 }
